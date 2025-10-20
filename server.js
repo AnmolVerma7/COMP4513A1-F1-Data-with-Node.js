@@ -27,11 +27,89 @@ const isInt = (v) => Number.isInteger(Number(v));
 function badReq(res, msg) { return res.status(400).json({ error: msg }); }
 
 // Helper - Health Check
-app.get("/", (req, res) => res.json({ 
-  API_STATUS: "RUNNING", 
-  uptime: process.uptime(),
-  message: "Welcome to the F1 Data API, made by Anmol Verma" 
-}));
+// app.get("/", (req, res) => res.json({ 
+//   API_STATUS: "RUNNING", 
+//   uptime: process.uptime(),
+//   message: "Welcome to the F1 Data API, made by Anmol Verma" 
+// }));
+app.get("/", (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>F1 Data API</title>
+      <style>
+        body {
+          font-family:Arial,sans-serif;
+          margin:40px;
+          background-color:#979797ff;
+          color:#333;
+        }
+        h1 {
+          color: #2c2c2cff;
+        }
+        h2 {
+          color: #2c2c2cff;
+        }
+        ul {
+          list-style-type:none;
+          padding:0;
+        }
+        li {
+          margin:10px 0;
+        }
+        a {
+          color:#0066cc;
+          text-decoration:none;
+          padding:8px 12px;
+          display:inline-block;
+          border:1px solid #464646ff;
+          border-radius:4px;
+          background-color: #313131ff;
+          color:  #ffffffff
+        }
+        a:hover {
+          background-color: #ffffffff;
+          border-color:#999;
+          color:  #313131ff ;
+        }
+        p {
+          color: #000000ff;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Welcome to the F1 Data API</h1>
+      <p>Made by Anmol Verma</p>
+      <p>Status: <strong>RUNNING</strong> | Uptime: ${process.uptime().toFixed(1)}s</p>
+      
+      <h2>Available Endpoints:</h2>
+      <ul>
+        <li><a href="/api/circuits">GET /api/circuits</a></li>
+        <li><a href="/api/circuits/monaco">GET /api/circuits/:circuitRef</a></li>
+        <li><a href="/api/circuits/season/2020">GET /api/circuits/season/:year</a></li>
+        <li><a href="/api/constructors">GET /api/constructors</a></li>
+        <li><a href="/api/constructors/mclaren">GET /api/constructors/:ref</a></li>
+        <li><a href="/api/drivers">GET /api/drivers</a></li>
+        <li><a href="/api/drivers/hamilton">GET /api/drivers/:ref</a></li>
+        <li><a href="/api/drivers/search/sch">GET /api/drivers/search/:substring</a></li>
+        <li><a href="/api/drivers/race/1106">GET /api/drivers/race/:raceId</a></li>
+        <li><a href="/api/races/1106">GET /api/races/:raceId</a></li>
+        <li><a href="/api/races/season/2020">GET /api/races/season/:year</a></li>
+        <li><a href="/api/races/season/2022/4">GET /api/races/season/:year/:round</a></li>
+        <li><a href="/api/races/circuits/monza">GET /api/races/circuits/:ref</a></li>
+        <li><a href="/api/races/circuits/monza/season/2015/2020">GET /api/races/circuits/:ref/season/:start/:end</a></li>
+        <li><a href="/api/results/1106">GET /api/results/:raceId</a></li>
+        <li><a href="/api/results/driver/max_verstappen">GET /api/results/driver/:ref</a></li>
+        <li><a href="/api/results/drivers/sainz/seasons/2022/2022">GET /api/results/drivers/:ref/seasons/:start/:end</a></li>
+        <li><a href="/api/qualifying/1106">GET /api/qualifying/:raceId</a></li>
+        <li><a href="/api/standings/drivers/1106">GET /api/standings/drivers/:raceId</a></li>
+        <li><a href="/api/standings/constructors/1106">GET /api/standings/constructors/:raceId</a></li>
+      </ul>
+    </body>
+    </html>
+  `);
+});
 
 // 1) /api/circuits - Return all circuits from f1.db
 // Returns all the circuits
