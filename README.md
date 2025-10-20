@@ -4,6 +4,10 @@
 
 This project is an API for querying F1 data including circuits, constructors, drivers, races and results. The API is built using Node.js and Express, with data stored in an SQLite database containing historical Formula 1 racing information.
 
+## Live API
+
+The API is hosted at: https://f1datanodejs.onrender.com
+
 ## Built with
 
 **Node.js** - JS runtime  
@@ -39,35 +43,35 @@ This project is an API for querying F1 data including circuits, constructors, dr
 
 ### Test Links
 
-- [/api/circuits](http://localhost:3000/api/circuits)
-- [/api/circuits/monza](http://localhost:3000/api/circuits/monza)
-- [/api/circuits/calgary](http://localhost:3000/api/circuits/calgary)
-- [/api/constructors](http://localhost:3000/api/constructors)
-- [/api/constructors/ferrari](http://localhost:3000/api/constructors/ferrari)
-- [/api/drivers](http://localhost:3000/api/drivers)
-- [/api/drivers/Norris](http://localhost:3000/api/drivers/Norris)
-- [/api/drivers/norris](http://localhost:3000/api/drivers/norris)
-- [/api/drivers/connolly](http://localhost:3000/api/drivers/connolly)
-- [/api/drivers/search/sch](http://localhost:3000/api/drivers/search/sch)
-- [/api/drivers/search/xxxxx](http://localhost:3000/api/drivers/search/xxxxx)
-- [/api/drivers/race/1069](http://localhost:3000/api/drivers/race/1069)
-- [/api/races/1034](http://localhost:3000/api/races/1034)
-- [/api/races/season/2021](http://localhost:3000/api/races/season/2021)
-- [/api/races/season/1800](http://localhost:3000/api/races/season/1800)
-- [/api/races/season/2020/5](http://localhost:3000/api/races/season/2020/5)
-- [/api/races/season/2020/100](http://localhost:3000/api/races/season/2020/100)
-- [/api/races/circuits/7](http://localhost:3000/api/races/circuits/7)
-- [/api/races/circuits/7/season/2015/2022](http://localhost:3000/api/races/circuits/7/season/2015/2022)
-- [/api/races/circuits/7/season/2022/2022](http://localhost:3000/api/races/circuits/7/season/2022/2022)
-- [/api/results/1106](http://localhost:3000/api/results/1106)
-- [/api/results/driver/max_verstappen](http://localhost:3000/api/results/driver/max_verstappen)
-- [/api/results/driver/connolly](http://localhost:3000/api/results/driver/connolly)
-- [/api/results/drivers/sainz/seasons/2021/2022](http://localhost:3000/api/results/drivers/sainz/seasons/2021/2022)
-- [/api/results/drivers/sainz/seasons/2035/2022](http://localhost:3000/api/results/drivers/sainz/seasons/2035/2022)
-- [/api/qualifying/1106](http://localhost:3000/api/qualifying/1106)
-- [/api/standings/drivers/1120](http://localhost:3000/api/standings/drivers/1120)
-- [/api/standings/constructors/1120](http://localhost:3000/api/standings/constructors/1120)
-- [/api/standings/constructors/asds](http://localhost:3000/api/standings/constructors/asds)
+- [/api/circuits](https://f1datanodejs.onrender.com/api/circuits)
+- [/api/circuits/monza](https://f1datanodejs.onrender.com/api/circuits/monza)
+- [/api/circuits/calgary](https://f1datanodejs.onrender.com/api/circuits/calgary)
+- [/api/constructors](https://f1datanodejs.onrender.com/api/constructors)
+- [/api/constructors/ferrari](https://f1datanodejs.onrender.com/api/constructors/ferrari)
+- [/api/drivers](https://f1datanodejs.onrender.com/api/drivers)
+- [/api/drivers/Norris](https://f1datanodejs.onrender.com/api/drivers/Norris)
+- [/api/drivers/norris](https://f1datanodejs.onrender.com/api/drivers/norris)
+- [/api/drivers/connolly](https://f1datanodejs.onrender.com/api/drivers/connolly)
+- [/api/drivers/search/sch](https://f1datanodejs.onrender.com/api/drivers/search/sch)
+- [/api/drivers/search/xxxxx](https://f1datanodejs.onrender.com/api/drivers/search/xxxxx)
+- [/api/drivers/race/1069](https://f1datanodejs.onrender.com/api/drivers/race/1069)
+- [/api/races/1034](https://f1datanodejs.onrender.com/api/races/1034)
+- [/api/races/season/2021](https://f1datanodejs.onrender.com/api/races/season/2021)
+- [/api/races/season/1800](https://f1datanodejs.onrender.com/api/races/season/1800)
+- [/api/races/season/2020/5](https://f1datanodejs.onrender.com/api/races/season/2020/5)
+- [/api/races/season/2020/100](https://f1datanodejs.onrender.com/api/races/season/2020/100)
+- [/api/races/circuits/7](https://f1datanodejs.onrender.com/api/races/circuits/7)
+- [/api/races/circuits/7/season/2015/2022](https://f1datanodejs.onrender.com/api/races/circuits/7/season/2015/2022)
+- [/api/races/circuits/7/season/2022/2022](https://f1datanodejs.onrender.com/api/races/circuits/7/season/2022/2022)
+- [/api/results/1106](https://f1datanodejs.onrender.com/api/results/1106)
+- [/api/results/driver/max_verstappen](https://f1datanodejs.onrender.com/api/results/driver/max_verstappen)
+- [/api/results/driver/connolly](https://f1datanodejs.onrender.com/api/results/driver/connolly)
+- [/api/results/drivers/sainz/seasons/2021/2022](https://f1datanodejs.onrender.com/api/results/drivers/sainz/seasons/2021/2022)
+- [/api/results/drivers/sainz/seasons/2035/2022](https://f1datanodejs.onrender.com/api/results/drivers/sainz/seasons/2035/2022)
+- [/api/qualifying/1106](https://f1datanodejs.onrender.com/api/qualifying/1106)
+- [/api/standings/drivers/1120](https://f1datanodejs.onrender.com/api/standings/drivers/1120)
+- [/api/standings/constructors/1120](https://f1datanodejs.onrender.com/api/standings/constructors/1120)
+- [/api/standings/constructors/asds](https://f1datanodejs.onrender.com/api/standings/constructors/asds)
 
 ## Project Structure
 
@@ -82,8 +86,8 @@ This project is an API for querying F1 data including circuits, constructors, dr
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
-cd [project-directory]
+git clone https://github.com/AnmolVerma7/COMP4513A1-F1-Data-with-Node.js.git
+cd COMP4513A1-F1-Data-with-Node.js
 ```
 
 2. Install dependencies
@@ -127,8 +131,12 @@ Test the API endpoints using:
 
 Example:
 ```bash
-curl http://localhost:3000/api/drivers/hamilton
+curl https://f1datanodejs.onrender.com/api/drivers/hamilton
 ```
+
+## Hosting
+
+This API is hosted on Render's free tier. Note that the service may sleep after periods of inactivity, so the first request after a period of inactivity may take 30-60 seconds to respond while the service wakes up.
 
 ## Notes
 
