@@ -43,6 +43,8 @@ The API is hosted at: https://f1datanodejs.onrender.com
 
 ### Test Links
 
+**Note: The following test links use the hosted service at https://f1datanodejs.onrender.com**
+
 - [/api/circuits](https://f1datanodejs.onrender.com/api/circuits)
 - [/api/circuits/monza](https://f1datanodejs.onrender.com/api/circuits/monza)
 - [/api/circuits/calgary](https://f1datanodejs.onrender.com/api/circuits/calgary)
