@@ -26,12 +26,6 @@ const isInt = (v) => Number.isInteger(Number(v));
 // Helper - Bad Request
 function badReq(res, msg) { return res.status(400).json({ error: msg }); }
 
-// Helper - Health Check
-// app.get("/", (req, res) => res.json({ 
-//   API_STATUS: "RUNNING", 
-//   uptime: process.uptime(),
-//   message: "Welcome to the F1 Data API, made by Anmol Verma" 
-// }));
 app.get("/", (req, res) => {
   res.send(`
     <!DOCTYPE html>
